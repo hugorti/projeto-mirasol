@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2020",                       // Especifica a versão do ECMAScript alvo
+    "module": "commonjs",                    // Especifica o sistema de módulos
+    "typeRoots": ["src/@types"],
+    "strict": false,                         // Ativa todas as verificações estritas de tipo
+    "esModuleInterop": true,                 // Habilita a interoperabilidade com módulos ES
+    "skipLibCheck": true,                    // Pula a checagem de tipos em arquivos de declaração
+    "forceConsistentCasingInFileNames": true // Força a consistência no uso de maiúsculas e minúsculas
+  },
+  "include": [
+    "src"                                   // Diretório a ser incluído na compilação
+, "prisma/seed.ts"  ],
+  "exclude": [
+    "node_modules"                          // Diretório a ser excluído da compilação
+  ]
+}
